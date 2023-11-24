@@ -3,7 +3,7 @@
 * 操作系统：CentOS Linux release 7.9.2009 (Core)
 
 ## 一、安装 Apache
-```
+```shell
 yum install httpd        # 安装httpd服务
 systemctl start httpd    # 启动httpd服务
 systemctl status httpd   # 查看httpd服务状态
@@ -11,7 +11,7 @@ systemctl enable httpd   # 设置httpd服务开机启动
 ```
 
 ## 二、安装 PHP
-```
+```shell
 yum install epel-release -y
 rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
 
@@ -26,7 +26,7 @@ systemctl start php-fpm.service
 ```
 
 ## 三、安装 MySQL
-```
+```shell
 # 下载 MySQL 源
 wget http://dev.mysql.com/get/mysql57-community-release-el7-8.noarch.rpm
 
@@ -48,7 +48,7 @@ ALTER USER root@localhost IDENTIFIED BY 'password';  # 修改root密码
 ```
 
 ## 四、安装 Typecho
-```
+```shell
 wget http://typecho.org/downloads/1.1-17.10.30-release.tar.gz
 tar -zxvf 1.1-17.10.30-release.tar.gz
 cd build/

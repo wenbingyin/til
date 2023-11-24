@@ -19,7 +19,7 @@ cat /etc/redhat-release
 查询运行的服务及端口
 ## 六、服务器安全
 1. 禁止 root 用户登录，使用非 root 用户登录
-```
+```shell
 -- 新建用户
 useradd [username]
 -- 设置密码
@@ -31,7 +31,7 @@ vi /etc/ssh/sshd_config
 service sshd restart
 ```
 2. 修改 sshd 默认端口
-```
+```shell
 -- 找到#Port 22字段删掉#，将22改为其他不被使用的端口（服务器端口最大可以开到65536）
 vi /etc/ssh/sshd_config
 -- 重启sshd服务
